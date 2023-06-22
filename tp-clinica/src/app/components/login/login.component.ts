@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit
       {
         clave: new FormControl("", [Validators.minLength(4), Validators.required]),
         email: new FormControl("",[Validators.email, Validators.required]),
-        recaptcha: new FormControl('',)
+        recaptcha: new FormControl('',Validators.required)
 
        }, [Validators.required]);
   }
