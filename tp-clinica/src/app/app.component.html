@@ -1,0 +1,17 @@
+<div class="row header d-fixed letras">
+  <div class="p-3 col-sm-7 d-flex justify-content-center" >
+    <button class="m-1 btn btn-secondary entypo-home" routerLink=""> Bienvenida</button>
+  </div>
+  <div class=" div p-3 col-sm" >
+    <ng-container *ngIf="sesion == null else elseSesion">
+      <button class="m-1 btn btn-secondary entypo-login" routerLink="/login"> Login</button>
+      <button class="m-1 btn btn-secondary entypo-plus-squared" routerLink="/register"> Registrarse</button>
+    </ng-container>
+    <ng-template #elseSesion>
+      <div class="div col-sm">Sesion iniciada</div>
+      <button class="m-1 btn btn-secondary entypo-login" (click)="desloguear()" routerLink=""> Logout</button>
+    </ng-template>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,31 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+.letras
+{
+  font-weight: 600;
+  color: #fff;
+}
+.div
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header
+{
+  background-color: #4835d4;
+}
+
+.boton
+{
+  background-color: rgb(43, 48, 53);
+  border: 1px solid black;
+  width: 100px;
+  border-radius: 10px;
+}
+

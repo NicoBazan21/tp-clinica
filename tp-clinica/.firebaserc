@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tp-clinica-5e61a": {
+      "hosting": {
+        "tp-clinica": [
+          "tp-clinica-5e61a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tp-clinica-5e61a"
+  }
+}

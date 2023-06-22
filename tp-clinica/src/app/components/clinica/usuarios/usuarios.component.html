@@ -1,0 +1,27 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Edad</th>
+      <th>Especialidad</th>
+      <th>Mail</th>
+      <th>Acceso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let esp of listaEspecialistas">
+      <td>{{esp.nombre}}</td>
+      <td>{{esp.apellido}}</td>
+      <td>{{esp.edad}}</td>
+      <ul *ngFor="let esp of esp.especialidades">
+        <td>{{esp.especialidad}},</td>
+      </ul>
+      <td>{{esp.mail}}</td>
+      <td>
+        <button class="btn btn-info" (click)="cambiarAcceso()">{{esp.acceso}}</button>
+      </td>
+      </tr>
+  </tbody>
+</table>
+
